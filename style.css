@@ -43,7 +43,7 @@ body{
   margin: 25px;
 }
 
-.bottom-right-nav {
+/*.bottom-right-nav {
   position: fixed;
   right: 50px;
   bottom: 50px;
@@ -62,7 +62,7 @@ body{
 
 .bottom-right-nav .menu-bottom-right li a:hover {
   text-decoration: underline;
-}
+} */
 
 /*
 
@@ -92,21 +92,19 @@ This isn't working?
 
 .sub-nav h2 {
   color: black;
-  font-family: 'Freight-Big-Light';
-  font-weight: 100;
-  font-style: normal;
-  font-size: 1.75rem;
-  margin-top: 1.65	rem;
-  margin-right: 15px;
+	font-family: 'Basis-Grotesque-Bold';
+  font-size: 1rem;
+  margin-top: 2.25rem;
+  margin-right: .5rem;
 }
 
 .sub-nav h3 {
   left: 3%;
   color: black;
   font-family: 'Basis-Grotesque-Bold';
-  font-size: 10px;
-  margin-top: 8px;
-  margin-left: 10px;
+  font-size: .6rem;
+  margin-top: .5rem;
+  margin-left: .5rem;
   text-align: left;
 }
 
@@ -185,6 +183,28 @@ This isn't working?
   text-align: right;
   text-decoration: none;
 }
+
+/* Photographer's Details Panel Animation*/
+
+.details {
+	animation: details 1s ease-in-out 0s forwards;
+}
+
+.home {
+	animation: details paused;
+}
+
+
+@keyframes details {
+	from {
+		width: 82%;
+	}
+	to {
+		width: 50%;
+		height: 87%;
+	}
+}
+
 /*
 .nick-dempsey .name-location h2 {
   margin: 8px 0 0 85px;
