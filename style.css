@@ -75,6 +75,7 @@ This isn't working?
 */
 
 .sub-nav {
+	width: 82%;
   display: grid;
   grid-template-columns: 10% 70% 20%;
   text-align: right;
@@ -112,7 +113,6 @@ This isn't working?
 /* Bob Price */
 
 .bob-price {
-  width: 82%;
   height: 30%;
   background-color: #F36F63;
   position: fixed;
@@ -133,7 +133,6 @@ This isn't working?
 /* Erich Gerard Robert Kirwin */
 
 .erich-gerard-robert-kirwin {
-  width: 82%;
   height: 22.5%;
   background-color: #F1C059;
   position: fixed;
@@ -154,7 +153,6 @@ This isn't working?
 /* Derek Corneau */
 
 .derek-corneau {
-  width: 82%;
   height: 15%;
   background-color: #109675;
   position: fixed;
@@ -171,11 +169,10 @@ This isn't working?
   margin: 8px 0 0 85px;
   margin-top: 1rem;
 }*/
-
+.hide {display: none;}
 /* Nick Dempsey */
 
 .nick-dempsey {
-  width: 82%;
   height: 7.5%;
   background-color: #3B87C7;
   position: fixed;
@@ -187,23 +184,49 @@ This isn't working?
 /* Photographer's Details Panel Animation*/
 
 .details {
-	animation: details 1s ease-in-out 0s forwards;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
 }
 
-.home {
+.details-active {
+	animation: 1s ease-in-out 0s forwards;
+	width: 50%;
+	height: 87%
+}
+
+.sub-nav {
 	animation: details paused;
 }
 
+.sub-nav-active {
+	animation: 1s ease-in-out 0s forwards;
+	width: 50%;
+	height: 0%;
+}
 
-@keyframes details {
+/* @keyframes details {
 	from {
 		width: 82%;
 	}
+
 	to {
 		width: 50%;
 		height: 87%;
 	}
-}
+} */
+
+/* @keyframes shrink {
+	from {
+		width: 82%;
+	}
+
+	to {
+		width: 50%;
+	}
+} */
 
 /*
 .nick-dempsey .name-location h2 {
