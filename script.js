@@ -2,10 +2,8 @@
 $(function() {
 // Your Code from here on down. Don't delete that line above!
 $('.details').click(function() {
+  $('.details').not(this).toggleClass('sub-nav-active')
   $(this).toggleClass('details-active')
-
-  // $(".details").click(function() {
-  //   $(this).toggleClass('sub-nav-active')
 });
 
 

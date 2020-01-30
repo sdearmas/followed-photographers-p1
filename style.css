@@ -75,9 +75,10 @@ This isn't working?
 */
 
 .sub-nav {
-	width: 82%;
+	width: 75%;
   display: grid;
-  grid-template-columns: 10% 70% 20%;
+  grid-template-columns: 10% 75% 15%;
+	grid-column-gap: 1em;
   text-align: right;
   font-smooth: none;
 }
@@ -86,17 +87,18 @@ This isn't working?
   color: black;
   font-family: 'Fondamento-Regular';
   font-style: regular;
-  font-size: 4.1rem;
-  margin-top: .75rem;
-  margin-right: -2.25rem;
+  font-size: 2.25rem;
+  margin-top: 1.4rem;
+  /* margin-right: -2.25rem; */
+	text-align: right;
 }
 
 .sub-nav h2 {
   color: black;
 	font-family: 'Basis-Grotesque-Bold';
-  font-size: 1rem;
-  margin-top: 2.25rem;
-  margin-right: .5rem;
+  font-size: .6rem;
+  margin-top: 2.75rem;
+	text-align: left;
 }
 
 .sub-nav h3 {
@@ -117,7 +119,6 @@ This isn't working?
   background-color: #F36F63;
   position: fixed;
   bottom: 0;
-  text-align: right;
   text-decoration: none;
 }
 
@@ -137,7 +138,6 @@ This isn't working?
   background-color: #F1C059;
   position: fixed;
   bottom: 0;
-  text-align: right;
   text-decoration: none;
 }
 
@@ -157,7 +157,6 @@ This isn't working?
   background-color: #109675;
   position: fixed;
   bottom: 0;
-  text-align: right;
   text-decoration: none;
 }
 
@@ -169,7 +168,6 @@ This isn't working?
   margin: 8px 0 0 85px;
   margin-top: 1rem;
 }*/
-.hide {display: none;}
 /* Nick Dempsey */
 
 .nick-dempsey {
@@ -177,24 +175,33 @@ This isn't working?
   background-color: #3B87C7;
   position: fixed;
   bottom: 0;
-  text-align: right;
   text-decoration: none;
 }
 
 /* Photographer's Details Panel Animation*/
+
+.sub-nav-active {
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+transition: all .5s ease-in-out;
+}
 
 .details {
 -webkit-transition: all 1s ease-in-out;
 -moz-transition: all 1s ease-in-out;
 -o-transition: all 1s ease-in-out;
 -ms-transition: all 1s ease-in-out;
-transition: all 1s ease-in-out;
+transition: all .5s ease-in-out;
 }
 
 .details-active {
 	animation: 1s ease-in-out 0s forwards;
 	width: 50%;
-	height: 87%
+	height: 87%;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
 }
 
 .sub-nav {
