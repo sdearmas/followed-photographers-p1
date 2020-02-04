@@ -40,44 +40,6 @@ body{
   background-color: black;
 }
 
-.carousel-container {
-  width: 400px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.carousel-container figure {
-  position: relative;
-  width: 400px;
-  height: auto;
-}
-
-.carousel-slide img {
-  width: 20%;
-  height: auto;
-}
-
-/* .carousel-slide img .active {
-  display: inline-block;
-} */
-
-.prev, .next {
-  float: left;
-  margin-top: 130px;
-  cursor: pointer;
-}
-
-.prev {
-  position: relative;
-  margin-right: -45px;
-  z-index: 100;
-}
-
-.prev {
-  position: relative;
-  margin-left: -45px;
-  z-index: 100;
-}
 .wrapper {
   display: flex;
   justify-content: center;
@@ -86,6 +48,15 @@ body{
 .wrapper a img {
   width: 7.5em;
   margin: 25px;
+}
+
+.my-slick{
+  visibility: hidden;
+}
+
+.slide img {
+  width: 600px;
+  height: 400px;
 }
 
 .sub-nav {
@@ -298,6 +269,13 @@ transition: all .4s ease-in-out;
 	margin-right: 1rem;
 }
 
+.details-active .my-slick {
+  visibility: visible;
+  position: absolute;
+  top: 18%;
+  right: -88%;
+}
+
 .sub-nav {
 	animation: details paused;
 }
@@ -307,6 +285,29 @@ transition: all .4s ease-in-out;
 	width: 50%;
 	height: 0%;
 }
+
+.slider {
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid blue;
+}
+
+
+
+.slide-content .text-content {margin-left: 20px;}
+
+.slide-content img {width: 100%;}
+
+.slick-initialized .slick-slide {
+	/*display: grid;
+	grid-template-columns: 1fr 1fr;*/
+}
+
+.slide img {width: 600px;}
+.slide {margin: 0 0;}
+
 
 @media only screen and (min-width:768px) {
 
