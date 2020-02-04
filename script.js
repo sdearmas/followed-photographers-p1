@@ -5,8 +5,5 @@ $('.details').click(function() {
   $('.details').not(this).toggleClass('sub-nav-active')
   $(this).toggleClass('details-active')
 });
-
-
-
 // End of Your Code . Don't delete that line below!!
 });

@@ -40,29 +40,44 @@ body{
   background-color: black;
 }
 
-/* .derek-slideshow {
-  overflow: scroll;
+.carousel-container {
+  width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-container figure {
+  position: relative;
+  width: 400px;
   height: auto;
-  width: 60%;
-  margin: 0 auto;
 }
 
-.derek-slideshow {
-  width: 60%;
-  -webkit-animation: slide 18s ease infinite;
-}
-
-.derek-slideshow img {
-	width: 60%;
-	height: auto;
-}
-
-.slide {
-  float: right;
+.carousel-slide img {
+  width: 20%;
   height: auto;
-  width: 100%;
+}
+
+/* .carousel-slide img .active {
+  display: inline-block;
 } */
 
+.prev, .next {
+  float: left;
+  margin-top: 130px;
+  cursor: pointer;
+}
+
+.prev {
+  position: relative;
+  margin-right: -45px;
+  z-index: 100;
+}
+
+.prev {
+  position: relative;
+  margin-left: -45px;
+  z-index: 100;
+}
 .wrapper {
   display: flex;
   justify-content: center;
