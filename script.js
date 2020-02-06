@@ -9,7 +9,7 @@ $('.details').click(function() {
 $('.my-slick').slick({
   dots: false,
   infinite: true,
-  speed: 100,
+  speed: 3000,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -30,7 +30,7 @@ $('.my-slick').slick({
       settings: {
       	centerMode: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       }
     },
     {
@@ -38,13 +38,13 @@ $('.my-slick').slick({
       settings: {
       	centerMode: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       }
     }
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
-  ]
+]
 });
 
 // End of Your Code . Don't delete that line below!!
