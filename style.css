@@ -222,6 +222,8 @@ transition: all .4s ease-in-out;
 	margin: auto;
 	margin-left: .7rem;
 	font-size: 3rem;
+  height: auto;
+  padding: 0;
 }
 
 .details-active .gear {
@@ -244,6 +246,8 @@ transition: all .4s ease-in-out;
 	grid-area: loc;
 	margin-left: 1rem;
 	font-size: 1.25rem;
+  height: auto;
+  padding: 0;
 }
 
 .details-active h3 {
@@ -268,12 +272,12 @@ transition: all .4s ease-in-out;
 	margin-right: 1rem;
 }
 
-.details-active .slick-initialized {
+.details-active .my-slick {
   visibility: visible;
   position: absolute;
   top: 18%;
-  right: -90%;
-  width: 100%;
+  left: 109%;
+  width: 600px;
 }
 
 .sub-nav {
@@ -287,17 +291,12 @@ transition: all .4s ease-in-out;
 }
 
 .slide {
+  width: 100%;
+}
+
+.slide img {
   width: 600px;
-  margin-left: 20px;
 }
-
-
-.slick-initialized .slick-slide {
-	/* display: grid;
-	grid-template-columns: 1fr 1fr; */
-}
-
-.slide img {width: 600px;}
 /* .slide {margin: 0 0;} */
 
 
@@ -474,8 +473,8 @@ transition: all .4s ease-in-out;
   .details-active h1 {
     text-align: left;
     /* margin-top: -125%; */
-    margin: auto;
-    margin-left: 20%;
+    margin: 0;
+    margin-left: 10%;
     font-size: 2.25rem;
     grid-area: name;
   }
@@ -483,8 +482,9 @@ transition: all .4s ease-in-out;
   .details-active .gear {
     text-align: left;
     visibility: visible;
-    margin: auto;
-    margin-left: 20%;
+    margin: 0;
+    margin-left: 10%;
+    margin-top: 0%;
     grid-area: gear;
     /* margin-top: -100%; */
   }
@@ -492,16 +492,16 @@ transition: all .4s ease-in-out;
   .details-active .stock {
     text-align: left;
     visibility: visible;
-    margin: auto;
-    margin-left: 20%;
-    margin-top: 30%;
+    margin: 0;
+    margin-left: 10%;
+    margin-top: 10%;
     grid-area: gear;
   }
 
   .details-active h2 {
     text-align: left;
-    margin: auto;
-    margin-left: 20%;
+    margin: 0;
+    margin-left: 10%;
     font-size: 1rem;
     display: grid;
     grid-area: loc;
@@ -509,17 +509,16 @@ transition: all .4s ease-in-out;
 
   .details-active h3 {
     text-align: left;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-top: 20px;
     grid-area: pho;
   }
 
   .details-active p {
     text-align: left;
-    margin: auto;
-    margin-left: 20%;
+    margin: 0;
+    margin-left: 10%;
     margin-right: 25%;
-    margin-top: 20%;
     visibility: visible;
     grid-area: des;
   }
@@ -528,16 +527,21 @@ transition: all .4s ease-in-out;
     text-align: right;
     visibility: visible;
     grid-area: social;
-    margin-right: -25%;
-    margin-top: 10%;
+    margin-top: 20%;
   }
 
-  .details-active .slick-initialized {
+  .details-active .my-slick {
     visibility: visible;
-    position: absolute;
-    top: 18%;
-    right: -90%;
+    margin: 0;
     grid-area: slick;
+    width: 80%;
+    height: auto;
+    position: absolute;
+    left: 180px;
+    top: -100px;
+
+    /* bottom: 100px;
+    right: 100px; */
   }
 
   .sub-nav {
@@ -550,19 +554,21 @@ transition: all .4s ease-in-out;
     height: 0%;
   }
 
-  .slide {margin-left: 20px;}
+  .slide {
+    width: 80%;
+  }
 
-  .slide img {width: 100%;}
+  .slide img {
+    width: 80%;
+    height: auto;
+    margin: 20px;
+  }
 
   .slick-initialized .slick-slide {
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
   }
 
-  .slide img {width: 600px;}
-  /* .slide {margin: 0 0;} */
-}
+/* @media only screen and (min-width:1224px) {
 
-@media only screen and (min-width:1224px) {
-
-}
+} */
