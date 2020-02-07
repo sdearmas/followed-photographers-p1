@@ -7,6 +7,7 @@ $('.details').click(function() {
 });
 
 $('.my-slick').slick({
+  variableWidth: true,
   dots: false,
   infinite: true,
   speed: 3500,
@@ -14,6 +15,8 @@ $('.my-slick').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2500
+
+
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
